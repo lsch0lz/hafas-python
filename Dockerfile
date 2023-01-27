@@ -5,9 +5,9 @@ LABEL maintainer="Lukas Scholz"
 
 COPY ./requirements.txt /requirements.txt
 
-RUN pip install --upgrade -r /requirements.txt
+COPY ./app/ /app
 
-COPY ./app /app
+RUN pip install --upgrade -r /requirements.txt
 
 WORKDIR /app
 
