@@ -7,6 +7,6 @@ COPY ./requirements.txt /requirements.txt
 
 RUN pip install --upgrade -r /requirements.txt
 
-COPY ./app /app
+COPY app /app
 
 EXPOSE 8773
