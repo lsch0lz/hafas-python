@@ -1,5 +1,5 @@
 FROM python:3.8
-WORKDIR /app
+WORKDIR /
 
 LABEL maintainer="Lukas Scholz"
 
@@ -7,6 +7,8 @@ COPY ./requirements.txt /requirements.txt
 
 RUN pip install --upgrade -r /requirements.txt
 
-COPY app /app
+COPY ./app /app
+
+WORKDIR /app
 
 EXPOSE 8773
