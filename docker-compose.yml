@@ -1,13 +1,14 @@
 version: "3"
 
+volumes:
+  app:
+
 services:
   fastapi:
     build: ./
     command: uvicorn app.main:app --port 8772 --host 0.0.0.0 --reload
     container_name: fastapi-application-test
     volumes:
-      - ./app:/app
+      - "./app:/app"
     ports:
       - "8772:8772"
-volumes:
-  app:
