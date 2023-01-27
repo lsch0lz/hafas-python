@@ -9,3 +9,5 @@ services:
       - ./app:/app
     ports:
       - "8772:8772"
+volumes:
+  app:
