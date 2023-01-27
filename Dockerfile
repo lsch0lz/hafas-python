@@ -11,4 +11,4 @@ RUN pip install --upgrade -r /requirements.txt
 
 WORKDIR /app
 
-EXPOSE 8773
+EXPOSE 8772

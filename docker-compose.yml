@@ -3,9 +3,9 @@ version: "3"
 services:
   fastapi:
     build: ./
-    command: uvicorn app.main:app --port 8773 --host 0.0.0.0 --reload
+    command: uvicorn app.main:app --port 8772 --host 0.0.0.0 --reload
     container_name: fastapi-application
     volumes:
       - .:/app
     ports:
-      - "8773:8773"
+      - "8772:8772"
